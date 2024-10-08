@@ -40,12 +40,12 @@
             this.isbn = bookISBN;
             this.noOfPages = bookNoOfPages;
         }
-        // Method to display information about the book
+        // Method to display information about a book
         public void DisplayInfo()
         {
             // Outbook the book information to the console
-            Console.WriteLine("Book information");
-            Console.WriteLine("----------------");
+            Console.WriteLine($"Book information");
+            Console.WriteLine($"----------------");
             Console.WriteLine($"Book Title: {Title}");
             Console.WriteLine($"Book Author: {Author}");
             Console.WriteLine($"Book ISBN: {ISBN}");
