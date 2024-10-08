@@ -3,18 +3,18 @@
     class Book
     {
 
-        // Properties
-        private string Title;
-        private string Author;
-        private string ISBN;
-        private int NoOfPages;
+        // private variables
+        private string title;
+        private string author;
+        private string isbn;
+        private int noOfPages;
 
         // Title property to allow access
         // to the title private variable
-        public string Title
+        public string Title // Property
         {
-            get { return Title; } // Get method
-            set { Title = value; } // set method
+            get { return title; } // Get method
+            set { title = value; } // set method
         }
         public string Author
         {
@@ -28,20 +28,19 @@
         }
         public int NoOfPages
         {
-            get { return noofpages; } // Get method
-            set { noofpages = value; } // set method
+            get { return noOfPages; } // Get method
+            set { noOfPages = value; } // set method
         }
 
-        // Constructor for book object
-        // add new instance of the book class
+        // Constructor to add new book
         public Book(string bookTitle, string bookAuthor, string bookISBN, int bookNoOfPages)
         {
             this.title = bookTitle;
             this.author = bookAuthor;
             this.isbn = bookISBN;
-            this.noofpages = bookNoOfPages;
+            this.noOfPages = bookNoOfPages;
         }
-
+        // Method to display information about the book
         public void DisplayInfo()
         {
             // Outbook the book information to the console
